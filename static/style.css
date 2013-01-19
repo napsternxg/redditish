@@ -1,0 +1,22 @@
+body{
+width: 80%;
+margin: auto;
+}
+
+.top-nav{
+list-style: none;
+text-align: center;
+margin: auto;
+width: 80%;
+}
+
+.top-nav > li {
+float: left;
+padding: 0 5px;
+}
+
+.heading{
+clear: both;
+font-size: 24px;
+text-align: center;
+}

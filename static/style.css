@@ -20,3 +20,8 @@ clear: both;
 font-size: 24px;
 text-align: center;
 }
+
+#footer{
+text-align: center;
+background-color: orange;
+}

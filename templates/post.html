@@ -1,8 +1,8 @@
 $def with (posts)
 $for p in posts:
 	<div id="$p.id" class="post">
-	<span class="count">$p.votes</span>
 	<span class="up action">+</span>
+	<span class="count">$p.votes</span>
 	<span class="down action">-</span>
 	<a href="$p.url">$p.title</a>
 	</div>

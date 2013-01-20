@@ -11,17 +11,50 @@ width: 80%;
 }
 
 .top-nav > li {
-float: left;
+display: inline;
 padding: 0 5px;
 }
 
 .heading{
 clear: both;
-font-size: 24px;
+font-size: 3em;
 text-align: center;
+}
+
+.post {
+    font-size: 24px;
+    border: 1px solid;
+    padding: 2px;
+    margin: 5px 0;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+.action {
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+}
+.up.action {
+    background-color: palegreen;
+}
+.down.action {
+    background-color: tomato;
 }
 
 #footer{
 text-align: center;
 background-color: orange;
+position: fixed;
+width: 80%;
+bottom: 0;
+border-radius: 10px 10px 0 0;
+}
+
+#footer p{
+margin: 0;
+padding: 0;
 }

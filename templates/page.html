@@ -1,4 +1,4 @@
-$def with(page)
+$def with (modules)
 <html>
 <head>
 <title>Reddit</title>
@@ -7,12 +7,9 @@ $def with(page)
 <script type="text/javascript" src="/static/common.js" ></script>
 </head>
 <body>
-<ul class="top-nav">
-<li><a href="/">Home</a></li>
-<li><a href="/new">New Post</a></li>
-</ul>
-<h1 class="heading">Reddit</h1>
-$:page
+<h1 class="heading"><a href="/">Reddit</a></h1>
+<div id="new">$:modules['new_post']</div>
+<div id="posts">$:modules['posts']</div>
 <div id="footer">
 	<p> Created using <a href="http://webpy.org">Web.py</a> Framework.</p>
 	<p> By <em>Shubhanshu Mishra</em>

@@ -18,7 +18,8 @@ db = web.database(dbn="sqlite", db="reddit.db")
 class index:
 	def GET(self):
 		posts = db.select("posts")
-		return render.page(render.post(posts))
+		modules = {'new_post': render.new(), 'posts': render.post(posts)}
+		return render.page(modules)
 
 class vote:
 	def POST(self, id):
